@@ -4,7 +4,6 @@
 /* Description: Scan file and returns first google result URl for each query in file.  Results in output file                  */
 /* Version: 0.1                                                                                                                */
 /* Developer: Maxime Ouellette                                                                                                 */
-/* Company: In Marketing We trust                                                                                              */
 /*******************************************************************************************************************************/
 
 var inputFile = "bloggers.txt";
@@ -15,11 +14,6 @@ var fs = require('fs');
 var nextCounter = 0;
 var j =0;
 google.resultsPerPage = 1;
-
-
-
-//listBloggers = ["bunchamedia", "in marketing we trust", "vietnam"];
-
 
 
 var listBloggers = fs.readFileSync(inputFile).toString().split('\n');
@@ -39,8 +33,6 @@ function scrapeTheG(rand, j)
           if(err) {
               return console.log(err);
           }
-
-         // console.log("The file was saved!");
       });
 
     }
