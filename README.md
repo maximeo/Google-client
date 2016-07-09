@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-# ${1:Project Name}
+# Google-Client
 
 Scan an input file with multiple keywords (one per line) and returns first google result URl for each query in file.  
 Results will be stored in output file in format [query],[URL]
